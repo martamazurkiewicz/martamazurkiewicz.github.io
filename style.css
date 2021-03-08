@@ -1,0 +1,32 @@
+body {
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: black;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    color: white
+}
+.navbar {
+    margin-top: 5%;
+}
+.navbar.main {
+
+}
+.navbar.main.icons {
+
+}
+div.footer {
+    border-top: solid white;
+}
+a.footer {
+    margin-left: 5%;
+    margin-right: 5%;
+    color:white;
+    text-decoration: none;
+}
+a.footer:hover{
+    color: gray;
+}
