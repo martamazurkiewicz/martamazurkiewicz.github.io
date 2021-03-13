@@ -35,6 +35,10 @@ a.topic:hover{
     color: gray;
 }
 
+div.tile{
+    background-color: white;
+}
+
 div.footer {
     border-top: 0.1em solid white;
 }
