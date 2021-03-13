@@ -2,24 +2,41 @@ body {
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 5%;
     background-color: black;
     text-align: center;
     font-family: Roboto, sans-serif;
     color: white
 }
-.navbar {
-    margin-top: 5%;
+a:hover{
+    color: gray;
 }
-.navbar.main {
 
+div.navbar{
+    border-bottom: 0.1em solid white;
 }
-.navbar.main.icons {
+span.title{
+    font-size: 2.5em; 
+    margin-left: 30%; 
+    margin-right: 30%;
+}
+div.topics {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+a.topic{
+    margin-left: 2%;
+    margin-right: 2%;
+    color:white;
+    text-decoration: none;
+}
+a.topic:hover{
+    color: gray;
+}
 
-}
 div.footer {
-    border-top: solid white;
+    border-top: 0.1em solid white;
 }
 a.footer {
     margin-left: 5%;
