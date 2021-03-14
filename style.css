@@ -45,6 +45,9 @@ a.topic{
 a.topic:hover{
     color: gray;
 }
+a:hover{
+    color: gray;
+}
 
 div.tile{
     background-color: white;
