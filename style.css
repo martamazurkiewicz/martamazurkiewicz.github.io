@@ -9,6 +9,7 @@ body {
     font-family: Roboto, sans-serif;
     color: white
 }
+
 button {
     background-color: white;
     border: 0.1em solid black;
@@ -20,113 +21,133 @@ button {
     padding-top: 0.7em;
     padding-bottom: 0.7em;
 }
-button:hover{
+
+button:hover {
     background-color: lightgray;
 }
-p.section{
-    font-size: .6em; 
-    color:lightgray
+
+p.section {
+    font-size: .6em;
+    color: lightgray
 }
 
-div.navbar{
+div.navbar {
     border-bottom: 0.1em solid white;
 }
-.icon{
-    max-height: 1.5em; 
+
+.icon {
+    max-height: 1.5em;
     width: auto;
 }
-span.title{
-    font-size: 2.5em; 
-    margin-left: 30%; 
+
+span.title {
+    font-size: 2.5em;
+    margin-left: 30%;
     margin-right: 30%;
 }
+
 div.topics {
     margin-top: 2%;
 }
-a.topic{
+
+a.topic {
     margin-left: 2%;
     margin-right: 2%;
-    color:white;
+    color: white;
     text-decoration: none;
 }
-a.topic:hover{
+
+a.topic:hover {
     color: gray;
 }
-div.main{
-    background: url("background.jpg"); 
-    width: 90%; 
-    text-align: left; 
-    padding-left: 10%; 
-    padding-bottom: 2%; 
+
+div.main {
+    background: url("background.jpg");
+    width: 90%;
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 2%;
     padding-top: 2%;
 }
 
-div.section{
-    border-top: .05em white dotted; 
+div.section {
+    border-top: .05em white dotted;
     overflow: auto;
 }
-div.tile{
+
+div.tile {
     background-color: white;
     color: black;
 }
-div.horizontalTile{
-    width: 100%; 
+
+div.horizontalTile {
+    width: 100%;
     display: table;
-    margin-top: 1%; 
+    margin-top: 1%;
 }
-div.column{
+
+div.column {
     float: left;
 }
-div.article{
-    padding-left: 2%; 
-    padding-right: 1%; 
-    text-align: left; 
+
+div.article {
+    padding-left: 2%;
+    padding-right: 1%;
+    text-align: left;
     padding-bottom: 1%;
     padding-top: 2%;
 }
-a.title{
-    color:black; 
+
+a.title {
+    color: black;
     text-decoration: none;
 }
-a.title:hover{
+
+a.title:hover {
     color: gray;
 }
-h1.title{
+
+h1.title {
     border-bottom: 0.1em solid black;
     padding-bottom: 3%;
 }
-h2.title{
+
+h2.title {
     border-bottom: 0.1em solid black;
     padding-bottom: 3%;
 }
-div.halfWidthTile{
-    float: left; 
-    width: 49.5%; 
+
+div.halfWidthTile {
+    float: left;
+    width: 49.5%;
     margin-bottom: 1%;
 }
 
-div.verticalTile{
-    width: 33%; 
+div.verticalTile {
+    width: 33%;
     float: left;
-    text-align: left; 
+    text-align: left;
     overflow: auto;
 }
-img.verticalTile{
-    max-width: 100%; 
-    height:auto;
+
+img.verticalTile {
+    max-width: 100%;
+    height: auto;
 }
-p.latest{
-    margin-top: 5%; 
-    padding-bottom: 1%; 
-    margin-left:5%; 
-    margin-right:5%; 
+
+p.latest {
+    margin-top: 5%;
+    padding-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-bottom: .05em dotted black;
     color: black;
 }
-h3.verticalTile{
-    margin-bottom: 1%; 
-    padding-left: 5%; 
-    padding-right: 1%; 
+
+h3.verticalTile {
+    margin-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 1%;
     padding-bottom: 2%;
 }
 
@@ -135,12 +156,14 @@ div.footer {
     padding-top: 1%;
     margin-top: 1%;
 }
+
 a.footer {
     margin-left: 5%;
     margin-right: 5%;
-    color:white;
+    color: white;
     text-decoration: none;
 }
-a.footer:hover{
+
+a.footer:hover {
     color: gray;
 }
