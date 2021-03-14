@@ -52,6 +52,7 @@ div.tile{
 
 div.footer {
     border-top: 0.1em solid white;
+    padding-top: 1%;
 }
 a.footer {
     margin-left: 5%;
