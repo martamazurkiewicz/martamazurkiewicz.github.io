@@ -61,7 +61,7 @@ div.main{
     padding-top: 2%;
 }
 
-div.highlighted{
+div.section{
     border-top: .05em white dotted; 
     overflow: auto;
 }
@@ -73,15 +73,67 @@ div.horizontalTile{
     width: 100%; 
     display: table;
     margin-top: 1%; 
-    margin-bottom: 1%;
 }
 div.column{
     float: left;
+}
+div.article{
+    padding-left: 2%; 
+    padding-right: 1%; 
+    text-align: left; 
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+a.title{
+    color:black; 
+    text-decoration: none;
+}
+a.title:hover{
+    color: gray;
+}
+h1.title{
+    border-bottom: 0.1em solid black;
+    padding-bottom: 3%;
+}
+h2.title{
+    border-bottom: 0.1em solid black;
+    padding-bottom: 3%;
+}
+div.halfWidthTile{
+    float: left; 
+    width: 49.5%; 
+    margin-bottom: 1%;
+}
+
+div.verticalTile{
+    width: 33%; 
+    float: left;
+    text-align: left; 
+    overflow: auto;
+}
+img.verticalTile{
+    max-width: 100%; 
+    height:auto;
+}
+p.latest{
+    margin-top: 5%; 
+    padding-bottom: 1%; 
+    margin-left:5%; 
+    margin-right:5%; 
+    border-bottom: .05em dotted black;
+    color: black;
+}
+h3.verticalTile{
+    margin-bottom: 1%; 
+    padding-left: 5%; 
+    padding-right: 1%; 
+    padding-bottom: 2%;
 }
 
 div.footer {
     border-top: 0.1em solid white;
     padding-top: 1%;
+    margin-top: 1%;
 }
 a.footer {
     margin-left: 5%;
