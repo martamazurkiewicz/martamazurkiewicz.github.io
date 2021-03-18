@@ -1,0 +1,12 @@
+table.board{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+}
+button.tile{
+    width: 100px;
+    height: 90px;
+}
+button.playAgain{
+    background-color:lightcoral;
+}
