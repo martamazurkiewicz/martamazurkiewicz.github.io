@@ -1,6 +1,8 @@
+playersMark = null;
 function startGame(){
-    drawGame();
+    //create div with choosing marks, validate it, remove it and in its place draw board
     chooseMark();
+    drawGame();
     setPoints();
     //define points for computer and player as 0
 }
@@ -26,9 +28,11 @@ function createTile(tileNumber){
     var tile = document.createElement('button');
     tile.id = 'tile'+tileNumber;
     tile.type = 'button';
-    tile.innerHTML = 'PressMe!';
+    tile.innerHTML = ' ';
     tile.className = 'tile';
-    tile.onClick = drawMark();
+    tile.addEventListener('click', function(){
+        drawMark(tile.id);
+    });
     return tile;
 }
 function createPlayAgainButton(){
@@ -40,10 +44,13 @@ function createPlayAgainButton(){
     button.onClick = playAgain();
     return button;
 }
-function drawMark(){
-
+function drawMark(tileId){
+    var tile = document.getElementById(tileId);
+    drawCircle(tile);
 }
 function chooseMark(){
+    var popUp = ('<div><input type="radio">Cicle ○<br><input type="radio">Cross x</div>');
+    popUp.dialog();
     //popup with cirle and cross to choose
     //validate choosing
 }
@@ -62,11 +69,11 @@ function getWinner(){
 function displayWinner(){
 
 }
-function drawCross(){
-
+function drawCross(tile){
+    tile.style.backgroundImage = 'url(cross.png)';
 }
-function drawCircle(){
-
+function drawCircle(tile){
+    tile.style.backgroundImage = 'url(circle.png)';
 }
 function playerMove(){
 
