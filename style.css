@@ -151,10 +151,18 @@ h3.verticalTile {
     padding-bottom: 2%;
 }
 
+div.mark {
+    padding-bottom: 1%;
+    font-size: 1.5em;
+}
+
+input.mark {
+    margin-bottom: 1%;
+}
+
 div.footer {
     border-top: 0.1em solid white;
     padding-top: 1%;
-    margin-top: 1%;
 }
 
 a.footer {

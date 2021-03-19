@@ -143,9 +143,19 @@
         </div>
         <button type="button" style="float: right;">ALL ARTICLES ></button>
     </div>
-    <div class="section" id="gameDiv" style="width: 100%;">
+    <div class="section" id="gameDiv" style="width: 100%; background-color: rgba(169, 169, 169, 0.267);">
         <p class="section">Tic-tac-toe</p>
-        <button type="button" id="playButton" onclick="startGame()">Play Tic-tac-toe!</button>
+        <div class="mark" id="markDiv">
+            <p>Select mark:</p>
+            <input class="mark" type="radio" id="cross" name="mark" value="cross" checked>
+            <label for="cross">Cross</label>
+            <br>
+            <input class="mark" type="radio" id="circle" name="mark" value="circle">
+            <label for="circle">Circle</label>
+            <br>
+            <br>
+            <button type="button" id="playButton" onclick="startGame()">Play Tic-tac-toe!</button>
+        </div>
         <table class="board" id="boardTable"></table>
     </div>
     <div class="footer">
