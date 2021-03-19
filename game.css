@@ -10,4 +10,8 @@ button.tile{
 }
 button.playAgain{
     background-color:lightcoral;
+    margin-bottom: 1%;
+}
+span.move{
+    font-size: 1.5em;
 }
