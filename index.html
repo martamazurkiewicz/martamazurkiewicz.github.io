@@ -6,6 +6,8 @@
     <title>martamazurkiewicz</title>
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
 </head>
 
 <body>
@@ -140,6 +142,16 @@
             </div>
         </div>
         <button type="button" style="float: right;">ALL ARTICLES ></button>
+    </div>
+    <div class="section" id="gameDiv" style="width: 100%; background-color: rgba(169, 169, 169, 0.267);">
+        <p class="section">Tic-tac-toe</p>
+        <div id="headlinedInnerGameDiv">
+            <p id="gameTextNode" class="gameHeadline"></p>
+            <div id="innerGameDiv">
+            </div>
+            <button type="button" id="playGameButton" onclick="setMode()">Play Tic-tac-toe!</button>
+        </div>
+        <table class="board" id="boardTable"></table>
     </div>
     <div class="footer">
         <a href="#" class="footer">ABOUT</a>
