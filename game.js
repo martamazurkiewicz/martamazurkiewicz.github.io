@@ -1,6 +1,5 @@
 var playerMark = null;
 var flagedTiles = null;
-var playersMove = true;
 var mode = null;
 
 function startGame() {
@@ -9,7 +8,7 @@ function startGame() {
     var gameDiv = document.getElementById('innerGameDiv');
     gameDiv.innerHTML = '';
     drawGame();
-    clearFlagedTiles();
+    setFlagedTiles();
 }
 
 function setMode() {
@@ -41,7 +40,6 @@ function createButton(innerHTML, onClickFunc, args = null) {
             onClickFunc(args);
         }
     });
-    //button.onClick = onClickFunc();
     return button;
 }
 
@@ -102,10 +100,12 @@ function playerMove(tileId) {
     console.log(playerMark);
     drawTile(tile);
     if (isGameWon(tileId)) {
-        gameFinished();
+        var message = playerMark + ' won!';
+        gameFinished(message);
     }
     else if (isGameFinished()) {
-        gameFinishedDraw();
+        var message = 'Draw!';
+        gameFinished(message);
     }
     else {
         if (mode == 1) {
@@ -156,7 +156,7 @@ function isGameWon(tileId) {
     }
     return false;
 }
-function clearFlagedTiles() {
+function setFlagedTiles() {
     flagedTiles = new Array(3);
     for (var i = 0; i < 3; i++) {
         flagedTiles[i] = new Array(3);
@@ -165,48 +165,22 @@ function clearFlagedTiles() {
         }
     }
 }
-function clearBoard() {
-    for (var i = 0; i < 3; i++) {
-        for (var j = 0; j < 3; j++) {
-            var tileId = String(i)+String(j);
-            var tile = document.getElementById(tileId);
-            tile.style.background = 'white';
-            tile.disabled = false;
-        }
-    }
-}
 function playAgain() {
     document.getElementById("gameTextNode").innerHTML = "";
     document.getElementById("boardTable").innerHTML = "";
     setMode();
 }
-function gameFinished(){
-    alert(playerMark +' won!');
+function gameFinished(message) {
+    alert(message);
     disableAllTiles();
-    //createPlayGameButton();
 }
-// function createPlayGameButton(){
-    
-//     var button = document.createElement('button');
-//     button.type = 'button';
-//     button.id = 'playGameButton';
-//     button.innerHTML = 'Play Tic-tac-toe!';
-//     button.onClick = "setMode()";
-//     var headlinedInnerGameDiv = document.getElementById('headlinedInnerGameDiv');
-//     headlinedInnerGameDiv.appendChild(button);
-// }
-function gameFinishedDraw() {
-    alert('No one won!');
-    disableAllTiles();
-    //createPlayGameButton();
 
-}
-function disableAllTiles(){
+function disableAllTiles() {
     for (var i = 0; i < 3; i++) {
         for (var j = 0; j < 3; j++) {
             var tile = document.getElementById(String(i) + String(j))
             tile.disabled = true;
-            if(flagedTiles[i][j] == null){
+            if (flagedTiles[i][j] == null) {
                 tile.style.backgroundImage = 'url(blank.png)';
             }
         }
