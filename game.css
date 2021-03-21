@@ -6,12 +6,15 @@ table.board{
 button.tile{
     width: 100px;
     height: 90px;
-    background: url("blank.png") no-repeat 0 0 transparent;
+    background-color: white;
+}
+button.tile:hover {
+    background-color: gray;
 }
 button.playAgain{
     background-color:lightcoral;
     margin-bottom: 1%;
 }
-span.move{
+p.gameHeadline{
     font-size: 1.5em;
 }
