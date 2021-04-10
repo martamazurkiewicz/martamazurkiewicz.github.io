@@ -3,70 +3,54 @@
     text-decoration: none;
 }
 
-%articleBorder{
+%articleBorder {
     border-color: black;
     border-width: 5px;
     border-style: solid;
 }
 
-// %column-shared {
-//     float: left;
-// }
-
 * {
     box-sizing: border-box;
 }
+
 [class*="column-"] {
     float: left;
-  }
+}
 
 .column-1 {
-    //@extend %column-shared;
     width: 8.33%;
 }
 .column-2 {
-    //@extend %column-shared;
     width: 16.66%;
 }
 .column-3 {
-    //@extend %column-shared;
     width: 25%;
 }
 .column-4 {
-    //@extend %column-shared;
     width: 33.33%;
-    //width: 33%;
 }
 .column-5 {
-    //@extend %column-shared;
     width: 41.66%;
 }
 .column-6 {
-    //@extend %column-shared;
     width: 50%;
 }
 .column-7 {
-    //@extend %column-shared;
     width: 58.33%;
 }
 .column-8 {
-    //@extend %column-shared;
     width: 66.66%;
 }
 .column-9 {
-    //@extend %column-shared;
     width: 75%;
 }
 .column-10 {
-    //@extend %column-shared;
     width: 83.33%;
 }
 .column-11 {
-    //@extend %column-shared;
     width: 91.66%;
 }
 .column-12 {
-    //@extend %column-shared;
     width: 100%;
 }
 img {
@@ -113,6 +97,7 @@ p.section {
         width: auto;
     }
 }
+
 .topics {
     margin-top: 2%;
     a {
@@ -121,44 +106,24 @@ p.section {
         margin-right: 2%;
     }
 }
-div.main {
+
+.main {
     background: url("../../assets/img/background.jpg");
-    //width: 90%;
     text-align: left;
     padding-left: 10%;
     padding-bottom: 2%;
     padding-top: 2%;
 }
+
 div.section {
     border-top: 0.05em white dotted;
     overflow: auto;
-    //margin-bottom: 10px;
 }
-
-// div.tile {
-//     background-color: white;
-//     color: black;
-// }
-
-// div.horizontalTile {
-//     //width: 100%;
-//     //display: table;
-//     //margin-top: 1%;
-// }
-
-// div.column {
-//     @extend %column-shared;
-
-// }
 
 .article {
     @extend %articleBorder;
-    //padding-left: 2%;
-    //padding-right: 1%;
     text-align: left;
     margin-bottom: 10px;
-    //padding-bottom: 1%;
-    //padding-top: 2%;
     padding: 5px;
     background-color: white;
     color: black;
@@ -167,27 +132,11 @@ div.section {
         text-decoration: none;
     }
 }
+
 .articleSummary {
     padding-left: 10px;
     padding-right: 10px;
 }
-// div.halfWidthTile {
-//     float: left;
-//     //width: 49.5%;
-//     margin-bottom: 1%;
-// }
-
-// div.verticalTile {
-//     //width: 33%;
-//     //float: left;
-//     //text-align: left;
-//     //overflow: auto;
-// }
-
-// div.mark {
-//     padding-bottom: 1%;
-//     font-size: 1.5em;
-// }
 
 .footer {
     border-top: 0.1em solid white;
@@ -199,51 +148,11 @@ div.section {
     }
 }
 
-// .icon {
-//     max-height: 1.5em;
-//     width: auto;
-// }
-
-// span.title {
-//     font-size: 2.5em;
-//     margin-left: 30%;
-//     margin-right: 30%;
-// }
-// input.mark {
-//     margin-bottom: 1%;
-// }
-
-// a.topic {
-//     @extend %href-shared;
-//     margin-left: 2%;
-//     margin-right: 2%;
-// }
-
-// a.title {
-//     color: black;
-//     text-decoration: none;
-// }
-
-// a.footer {
-//     @extend %href-shared;
-//     margin-left: 5%;
-//     margin-right: 5%;
-// }
-
 .titleHeadline {
     border-bottom: 0.1em solid black;
     padding-bottom: 2%;
     text-overflow: clip;
-    //padding-right: 10px;
-    //margin-bottom: 3%;
 }
-
-// h3.verticalTileTitle {
-//     //margin-bottom: 1%;
-//     //padding-left: 5%;
-//     //padding-right: 5%;
-//     //padding-bottom: 2%;
-// }
 
 img.verticalTile {
     height: auto;
@@ -255,10 +164,10 @@ p.latest {
     margin-right: 5%;
     border-bottom: 0.05em dotted black;
 }
+
 .longTileArticle {
     @extend %articleBorder;
     display: inline-block;
-    //background: url("../../assets/img/background.jpg");
     background: url("../../assets/img/mountainsHorizontal.jpg");
     width: 100%;
     height: 20em;
