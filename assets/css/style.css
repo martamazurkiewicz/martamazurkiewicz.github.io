@@ -62,7 +62,7 @@ a.topic:hover {
 }
 
 div.main {
-    background: url("background.jpg");
+    background: url('../../assets/img/background.jpg');
     width: 90%;
     text-align: left;
     padding-left: 10%;

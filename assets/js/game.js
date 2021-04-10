@@ -171,14 +171,16 @@ function disableAllTiles() {
             var tile = document.getElementById(String(i) + String(j))
             tile.disabled = true;
             if (flaggedTiles[i][j] == null) {
-                tile.style.backgroundImage = 'url(blank.png)';
+                tile.style.backgroundImage = "url('assets/img/blank.png')";
             }
         }
     }
 }
 
 function drawMark(tile) {
-    tile.style.backgroundImage = 'url(' + currentMark + '.png)';
+    path = "'assets/img/" + currentMark + ".png'";
+    console.log(path);
+    tile.style.backgroundImage = "url(" + path + ")";
     tile.disabled = true;
     flaggedTiles[tile.id[0]][tile.id[1]] = currentMark;
 }
