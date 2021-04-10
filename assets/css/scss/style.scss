@@ -85,11 +85,6 @@ button:hover {
     background-color: lightgray;
 }
 
-p.section {
-    font-size: 0.6em;
-    color: lightgray;
-}
-
 .navbar {
     border-bottom: 0.1em solid white;
     img {
@@ -120,10 +115,14 @@ div.section {
     overflow: auto;
 }
 
+p.section {
+    font-size: 0.6em;
+    color: lightgray;
+}
+
 .article {
     @extend %articleBorder;
     text-align: left;
-    margin-bottom: 10px;
     padding: 5px;
     background-color: white;
     color: black;
@@ -154,10 +153,6 @@ div.section {
     text-overflow: clip;
 }
 
-img.verticalTile {
-    height: auto;
-}
-
 p.latest {
     margin-top: 5%;
     margin-left: 5%;
@@ -171,7 +166,6 @@ p.latest {
     background: url("../../assets/img/mountainsHorizontal.jpg");
     width: 100%;
     height: 20em;
-    margin-bottom: 1%;
     p {
         border-bottom: 0.05em dotted black;
         margin-top: 5%;
