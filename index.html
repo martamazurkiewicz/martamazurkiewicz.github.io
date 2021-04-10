@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>martamazurkiewicz</title>
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="assets\css\style.css">
@@ -12,26 +13,28 @@
 
 <body>
     <div class="navbar">
-        <div>
-            <span class="icons">
-                <a href="#"><img src="assets\img\menu_icon.ico" alt="menu" class="icon" /></a>
-                <a href="#"><img src="assets\img\search_icon.ico" alt="search" class="icon" /></a>
-            </span>
-            <span class="title">
-                martamazurkiewicz
-            </span>
-            <span class="icons">
-                <a href="#"><img src="assets\img\facebook_icon.ico" alt="facebook" class="icon" /></a>
-                <a href="#"><img src="assets\img\twitter_icon.ico" alt="twitter" class="icon" /></a>
-            </span>
+        <div class="column-12">
+            <div class="column-2">
+                <a href="#"><img src="assets\img\menu_icon.ico" alt="menu" /></a>
+                <a href="#"><img src="assets\img\search_icon.ico" alt="search" /></a>
+            </div>
+            <div class="column-8">
+                <h2>
+                    martamazurkiewicz
+                </h2>
+            </div>
+            <div class="column-2">
+                <a href="#"><img src="assets\img\facebook_icon.ico" alt="facebook" /></a>
+                <a href="#"><img src="assets\img\twitter_icon.ico" alt="twitter" /></a>
+            </div>
         </div>
         <div class="topics">
-            <a href="#" class="topic">Databases</a>
-            <a href="#" class="topic">.NET</a>
-            <a href="#" class="topic">Raspberry Pi</a>
-            <a href="#" class="topic">Arduino</a>
-            <a href="#" class="topic">Python</a>
-            <a href="#" class="topic">Lifestyle</a>
+            <a href="#">Databases</a>
+            <a href="#">.NET</a>
+            <a href="#">Raspberry Pi</a>
+            <a href="#">Arduino</a>
+            <a href="#">Python</a>
+            <a href="#">Lifestyle</a>
         </div>
     </div>
     <div class="main">
@@ -39,36 +42,36 @@
         <button type="button">ALL ARTICLES ></button>
     </div>
     <div class="section">
-        <div style="margin-left: 10%; margin-right: 10%;">
-            <p class="section">TOP ARTICLES</p>
-            <div class="tile horizontalTile">
-                <div class="column" style="width: 60%;">
-                    <img src="assets\img\raspberrypi.jpg" alt="Raspberry Pi" style="width: 100%;" />
-                </div>
-                <div class="column article" style="width: 35%;">
-                    <p>Raspberry Pi / 11.12.2020</p>
-                    <h1 class="titleHeadline" style="margin-bottom: 3%;">
-                        <a href="#" class="title">
-                            Something connected with Raspberry
-                        </a>
-                    </h1>
-                    <p>
-                        Aliquip sunt consequat laborum laboris amet consectetur aliquip proident adipisicing nulla magna
-                        mollit.
-                        Proident incididunt reprehenderit mollit cupidatat dolore ipsum aute quis elit Lorem ullamco
-                        dolor.
-                        Proident quis proident duis est dolor elit ut est enim aliquip incididunt incididunt laborum.
-                    </p>
-                    <button type="button" style="float: left;">READ ARTICLE ></button>
-                </div>
+        <p class="section">TOP ARTICLES</p>
+        <div class="column-12 article">
+            <div class="column-7">
+                <img src="assets\img\raspberrypi.jpg" alt="Raspberry Pi" />
             </div>
-            <div class="halfWidthTile tile horizontalTile">
-                <div class="column" style="width: 50%;">
-                    <img src="assets\img\remotework.jpg" alt="remotework" style="width: 100%;" />
+            <div class="column-5 articleSummary">
+                <p>Raspberry Pi / 11.12.2020</p>
+                <h1 class="titleHeadline">
+                    <a href="#" class="title">
+                        Something connected with Raspberry
+                    </a>
+                </h1>
+                <p>
+                    Aliquip sunt consequat laborum laboris amet consectetur aliquip proident adipisicing nulla magna
+                    mollit.
+                    Proident incididunt reprehenderit mollit cupidatat dolore ipsum aute quis elit Lorem ullamco
+                    dolor.
+                    Proident quis proident duis est dolor elit ut est enim aliquip incididunt incididunt laborum.
+                </p>
+                <button type="button">READ ARTICLE ></button>
+            </div>
+        </div>
+        <div>
+            <div class="column-6 article">
+                <div class="column-5">
+                    <img src="assets\img\remotework.jpg" alt="remotework" />
                 </div>
-                <div class="column article" style="width: 47%;">
+                <div class="column-7 articleSummary">
                     <p>Lifestyle / 02.03.2021</p>
-                    <h2 class="titleHeadline" style="margin-bottom: 1%;">
+                    <h2 class="titleHeadline">
                         <a href="#" class="title">
                             Props and cons of remote work
                         </a>
@@ -78,13 +81,13 @@
                     </p>
                 </div>
             </div>
-            <div class="halfWidthTile tile horizontalTile" style="margin-left: 1%">
-                <div class="column" style="width: 50%;">
-                    <img src="assets\img\css.jpg" alt="css" style="width: 100%;" />
+            <div class="column-6 article">
+                <div class="column-5">
+                    <img src="assets\img\css.jpg" alt="css" />
                 </div>
-                <div class="column article" style="width: 47%;">
+                <div class="column-7 articleSummary">
                     <p>Frontend / 10.02.2021</p>
-                    <h2 class="titleHeadline" style="margin-bottom: 1%;">
+                    <h2 class="titleHeadline">
                         <a href="#" class="title">
                             The horror of pure CSS
                         </a>
@@ -96,50 +99,49 @@
             </div>
         </div>
     </div>
-    <div class="section" style="width: 100%;">
+    <div class="section">
         <p class="section">LATEST</p>
-        <div class="verticalTile tile">
+        <div class="column-4 article">
             <img src="assets\img\db2.jpg" alt="db" class="verticalTile" />
             <div>
                 <p class="latest">Database / 14.03.2021</p>
-                <a href="#" class="title">
-                    <h3 class="verticalTile">
-                        Differences between Oracle DB and SQL Server</h3>
-                </a>
+                <h3>
+                    <a href="#" class="title">
+                        Differences between Oracle DB and SQL Server
+                    </a>
+                </h3>
+
             </div>
         </div>
-        <div class="verticalTile tile" style="margin-right: .5%; margin-left: .5%;">
-            <img src="assets\img\arduino.png" alt="arduino" class="verticalTile" />
+        <div class="column-4 article">
+            <img src="assets\img\arduino.png" alt="arduino" />
             <div>
                 <p class="latest">Electronics / 08.03.2021</p>
-                <h3 class="verticalTile">
+                <h3>
                     <a href="#" class="title">
                         Guide for Addressable RGB LED Strip with Arduino
                     </a>
                 </h3>
             </div>
         </div>
-        <div class="verticalTile tile">
-            <img src="assets\img\mountains.jpg" alt="mountains" class="verticalTile" />
+        <div class="column-4 article">
+            <img src="assets\img\mountains.jpg" alt="mountains" />
             <div>
                 <p class="latest">Lifestyle / 07.03.2021</p>
-                <h3 class="verticalTile">
+                <h3>
                     <a href="#" class="title">
                         Best holiday places in Poland
                     </a>
                 </h3>
             </div>
         </div>
-        <div
-            style="display:inline-block; background:url(assets\\img\\mountainsHorizontal.jpg); width: 100%; height: 20em; margin-top: 1%; margin-bottom: 1%;">
-            <div>
-                <p class="latest" style="margin-top: 5%; margin-left:30%; margin-right:30%;">Lifestyle / 05.03.2021</p>
-                <h2 style="margin-bottom: 1%; padding-bottom: 2%">
-                    <a href="#" class="title">
-                        Tatra Mountains in October
-                    </a>
-                </h2>
-            </div>
+        <div class="longTileArticle">
+            <p>Lifestyle / 05.03.2021</p>
+            <h2>
+                <a href="#">
+                    Tatra Mountains in October
+                </a>
+            </h2>
         </div>
         <button type="button" style="float: right;">ALL ARTICLES ></button>
     </div>
@@ -154,11 +156,11 @@
         <table class="board" id="boardTable"></table>
     </div>
     <div class="footer">
-        <a href="#" class="footer">ABOUT</a>
-        <a href="#" class="footer">PRIVACY</a>
-        <a href="#" class="footer">SOCIAL</a>
-        <a href="#" class="footer">CONTACT</a>
-        <p style="float:bottom;">
+        <a href="#">ABOUT</a>
+        <a href="#">PRIVACY</a>
+        <a href="#">SOCIAL</a>
+        <a href="#">CONTACT</a>
+        <p>
             Powered by GitHub | Designed by Marta Mazurkiewicz
         </p>
     </div>
