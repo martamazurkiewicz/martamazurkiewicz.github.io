@@ -1,0 +1,26 @@
+table.board {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+}
+
+button.tile {
+  width: 100px;
+  height: 90px;
+  background-color: white;
+}
+
+button.tile:hover {
+  background-color: gray;
+}
+
+button.playAgain {
+  background-color: lightcoral;
+  margin-bottom: 1%;
+}
+
+p.gameHeadline {
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=game.css.map */
