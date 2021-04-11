@@ -172,11 +172,13 @@ p.section {
     text-overflow: clip;
 }
 
-p.latest {
-    margin-top: 5%;
+.latestArticle{
     margin-left: 5%;
     margin-right: 5%;
-    border-bottom: $black-line-dotted;
+    p{
+        margin-top: 5%;
+        border-bottom: $black-line-dotted;
+    }
 }
 
 .longTileArticle {

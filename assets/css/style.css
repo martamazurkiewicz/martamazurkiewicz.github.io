@@ -172,10 +172,12 @@ p.section {
   text-overflow: clip;
 }
 
-p.latest {
-  margin-top: 5%;
+.latestArticle {
   margin-left: 5%;
   margin-right: 5%;
+}
+.latestArticle p {
+  margin-top: 5%;
   border-bottom: 2px dotted black;
 }
 
