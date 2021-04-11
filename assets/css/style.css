@@ -1,14 +1,86 @@
-a.footer, a.topic {
+.footer a, .topics a {
   color: white;
   text-decoration: none;
+}
+
+.longTileArticle, .article {
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[class*=column-] {
+  float: left;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .column-1 {
+    width: 8.33%;
+  }
+
+  .column-2 {
+    width: 16.66%;
+  }
+
+  .column-3 {
+    width: 25%;
+  }
+
+  .column-4 {
+    width: 33.33%;
+  }
+
+  .column-5 {
+    width: 41.66%;
+  }
+
+  .column-6 {
+    width: 50%;
+  }
+
+  .column-7 {
+    width: 58.33%;
+  }
+
+  .column-8 {
+    width: 66.66%;
+  }
+
+  .column-9 {
+    width: 75%;
+  }
+
+  .column-10 {
+    width: 83.33%;
+  }
+
+  .column-11 {
+    width: 91.66%;
+  }
+
+  .column-12 {
+    width: 100%;
+  }
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  width: 100%;
 }
 
 body {
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 2%;
-  margin-bottom: 5%;
   background-color: black;
   text-align: center;
   font-family: Roboto, sans-serif;
@@ -17,36 +89,42 @@ body {
 
 button {
   background-color: white;
-  border: 0.1em solid black;
+  border: 2px solid black;
   color: black;
-  border-radius: 0.1em;
-  font-size: 0.8em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  background-color: lightgray;
+  transform: translateY(-4px);
+  color: white;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  background-color: gray;
+  border-color: gray;
 }
 
-p.section {
-  font-size: 0.6em;
-  color: lightgray;
+.navbar {
+  border-bottom: 1px solid white;
+}
+.navbar img {
+  max-height: 23px;
+  width: auto;
+}
+.navbar .column {
+  width: 50%;
+  float: left;
 }
 
-div.navbar {
-  border-bottom: 0.1em solid white;
+.topics a {
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
-div.topics {
-  margin-top: 2%;
-}
-
-div.main {
+.main {
   background: url("../../assets/img/background.jpg");
-  width: 90%;
   text-align: left;
   padding-left: 10%;
   padding-bottom: 2%;
@@ -54,114 +132,76 @@ div.main {
 }
 
 div.section {
-  border-top: 0.05em white dotted;
+  border-top: 1px dotted white;
   overflow: auto;
 }
 
-div.tile {
+p.section {
+  font-size: 0.6em;
+  color: lightgray;
+}
+
+.article {
+  text-align: left;
+  padding: 5px;
   background-color: white;
   color: black;
 }
-
-div.horizontalTile {
-  width: 100%;
-  display: table;
-  margin-top: 1%;
-}
-
-div.column {
-  float: left;
-}
-
-div.article {
-  padding-left: 2%;
-  padding-right: 1%;
-  text-align: left;
-  padding-bottom: 1%;
-  padding-top: 2%;
-}
-
-div.halfWidthTile {
-  float: left;
-  width: 49.5%;
-  margin-bottom: 1%;
-}
-
-div.verticalTile {
-  width: 33%;
-  float: left;
-  text-align: left;
-  overflow: auto;
-}
-
-div.mark {
-  padding-bottom: 1%;
-  font-size: 1.5em;
-}
-
-div.footer {
-  border-top: 0.1em solid white;
-  padding-top: 1%;
-}
-
-.icon {
-  max-height: 1.5em;
-  width: auto;
-}
-
-span.title {
-  font-size: 2.5em;
-  margin-left: 30%;
-  margin-right: 30%;
-}
-
-input.mark {
-  margin-bottom: 1%;
-}
-
-a.topic {
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-a.title {
+.article a {
   color: black;
   text-decoration: none;
 }
 
-a.footer {
+.articleSummary {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer {
+  border-top: 1px solid white;
+  padding-top: 1%;
+}
+.footer a {
   margin-left: 5%;
   margin-right: 5%;
 }
 
 .titleHeadline {
-  border-bottom: 0.1em solid black;
-  padding-bottom: 3%;
-}
-
-h3.verticalTile {
-  margin-bottom: 1%;
-  padding-left: 5%;
-  padding-right: 1%;
+  border-bottom: 2px solid black;
   padding-bottom: 2%;
+  text-overflow: clip;
 }
 
-img.verticalTile {
-  max-width: 100%;
-  height: auto;
-}
-
-p.latest {
-  margin-top: 5%;
-  padding-bottom: 1%;
+.latestArticle {
   margin-left: 5%;
   margin-right: 5%;
-  border-bottom: 0.05em dotted black;
+}
+.latestArticle p {
+  margin-top: 5%;
+  border-bottom: 2px dotted black;
+}
+
+.longTileArticle {
+  display: inline-block;
+  background: url("../../assets/img/mountainsHorizontal.jpg");
+  width: 100%;
+  height: 20em;
+}
+.longTileArticle p {
+  border-bottom: 2px dotted black;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
   color: black;
+}
+.longTileArticle a {
+  color: black;
+  text-decoration: none;
 }
 
 a:hover {
   color: gray;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
